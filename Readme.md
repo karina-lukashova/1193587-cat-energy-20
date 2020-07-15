@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Карина Лукашова](https://up.htmlacademy.ru/adaptive/20/user/1193587).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Уразаев](https://up.htmlacademy.ru/adaptive/20/user/61574).
 
 ---
 
