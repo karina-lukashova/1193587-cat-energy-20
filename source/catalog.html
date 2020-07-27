@@ -26,7 +26,7 @@
     </header>
     <main class="page-main">
       <section class="catalog">
-        <h1 class="catalog__title">Каталог продукции</h1>
+        <h1 class="catalog__title main-title">Каталог продукции</h1> <!-- Добавила класс блока main-title, т.к. на каждой странице главный заголовок сделан в одном стиле -->
         <ul class="catalog__list">
           <li class="catalog__item product">
             <a href="">
@@ -182,6 +182,65 @@
           <a class="more-products__link button button--product" href="">Показать все</a> <!-- Добавила модификатор, т.к. эта кнопка отличается по цвету от других кнопок -->
         </div>
       </section>
+      <section class="additional-products">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <ul class="additional-products__list">
+          <li class="additional-products__item add-product">
+            <h3 class="add-product__title">Сахарозаменитель</h3>
+            <table class="add-product__characteristics">
+              <tr class="add-product__characteristic">
+                <td class="add-product__volume">1 упаковка (100 г)</td>
+                <td class="add-product__price">200 Р.</td>
+              </tr>
+            </table>
+            <a class="add-product__order button js-order" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item add-product">
+            <h3 class="add-product__title">Питьевая вода</h3>
+            <table class="add-product__characteristics">
+              <tr class="add-product__characteristic">
+                <td class="add-product__volume">5 литров</td>
+                <td class="add-product__price">50 Р.</td>
+              </tr>
+            </table>
+            <a class="add-product__order button js-order" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item add-product">
+            <h3 class="add-product__title">Молоко</h3>
+            <table class="add-product__characteristics">
+              <tr class="add-product__characteristic">
+                <td class="add-product__volume">1 литр</td>
+                <td class="add-product__price">100 Р.</td>
+              </tr>
+            </table>
+            <a class="add-product__order button js-order" href="">Заказать</a>
+          </li>
+          <li class="additional-products__item add-product">
+            <h3 class="add-product__title">Витамины</h3>
+            <table class="add-product__characteristics">
+              <tr class="add-product__characteristic">
+                <td class="add-product__volume">1 упаковка (30 г)</td>
+                <td class="add-product__price">300 Р.</td>
+              </tr>
+            </table>
+            <a class="add-product__order button js-order" href="">Заказать</a>
+          </li>
+        </ul>
+        <div class="additional-products__promo promo">
+          <p class="promo__description">
+            Закажите все и получите чехол для кота в подарок!
+          </p>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__partnership partnership">
+          <h2 class="partnership__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="partnership__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+          </p>
+        </div>
+      <img class="contacts__map" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Адрес магазина Cat Energy: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"> <!-- Пока сделала карту картинкой, но позже вставлю через API -->
+    </section>
     </main>
     <footer class="page-footer">
       <a class="page-footer__logo-name logo-name" href="index.html">
