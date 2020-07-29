@@ -1,0 +1,10 @@
+.copyright {
+  font: inherit;
+  color: $light-asphalt;
+  line-height: 18px;
+  text-decoration: none;
+
+  &:active {
+    color: rgba($light-asphalt, 0.3);
+  }
+}

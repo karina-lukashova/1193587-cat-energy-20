@@ -1,0 +1,30 @@
+.site-list {
+  list-style: none;
+  font-family: $Oswald;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.site-list__item {
+  &--active {
+    border-bottom: 2px solid $green;
+  }
+}
+
+.site-list__item a {
+  color: $black;
+  text-decoration: none;
+}
+
+.site-list__item a[href] {
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}
