@@ -1,0 +1,15 @@
+.main-intro {
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-intro__slogan {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+}

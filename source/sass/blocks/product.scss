@@ -1,0 +1,28 @@
+.product a {
+  text-decoration: none;
+}
+
+.product__title {
+  font-family: $Oswald;
+  font-weight: normal;
+  line-height: 20px;
+  color: $asphalt;
+  text-transform: uppercase;
+
+  &:hover {
+    color: rgba($asphalt, 0.6);
+  }
+
+  &:active {
+    color: rgba($asphalt, 0.3);
+  }
+}
+
+.product__characteristics {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__value {
+  text-align: right;
+}
