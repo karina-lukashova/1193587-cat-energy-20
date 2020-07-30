@@ -1,1 +1,21 @@
-// Здесь будут стили для partnership
+.partnership {
+  background-color: $light-grey;
+
+  &--main {
+    background-color: $white;
+  }
+}
+
+.partnership__title {
+  font-family: $Oswald;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-asphalt;
+  text-transform: uppercase;
+}
+
+.partnership__address {
+  font-size: 14px;
+  line-height: 20px;
+}

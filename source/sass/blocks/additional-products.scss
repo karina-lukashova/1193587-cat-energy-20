@@ -1,1 +1,11 @@
-// Здесь будут стили для additional-products
+.additional-products__title {
+  font-family: $Oswald;
+  font-weight: normal;
+  font-size: 24px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.additional-products__list {
+  list-style: none;
+}
