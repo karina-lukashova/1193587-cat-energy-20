@@ -1,1 +1,14 @@
-// Здесь будут стили для promo
+.promo {
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 289px;
+}
+// min-height поставила, чтобы была видна картинка с котиком
+
+.promo__description {
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}

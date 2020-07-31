@@ -1,1 +1,38 @@
-// Здесь будут стили для form
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset-name {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
+
+.form__input-label {
+  font-family: $Oswald;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &--radio {
+    color: $asphalt;
+  }
+
+  &--checkbox {
+    color: $black;
+  }
+}
+
+.form__input-text::placeholder {
+  font-family: $Oswald;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-asphalt;
+}
+
+.form__input-comment {
+  font-family: $Oswald;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $light-asphalt;
+}

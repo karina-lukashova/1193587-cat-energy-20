@@ -1,1 +1,16 @@
-// Здесь будут стили для add-product
+.add-product__title {
+  font-family: $Oswald;
+  font-weight: normal;
+  line-height: 16px;
+  color: $asphalt;
+  text-transform: uppercase;
+}
+
+.add-product__characteristics {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.add-product__price {
+  text-align: right;
+}

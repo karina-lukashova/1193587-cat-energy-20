@@ -1,1 +1,37 @@
-// Здесь будут стили для example
+.example {
+  background-color: $light-whitesmoke;
+}
+
+.example__number {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__definition {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__food-cost {
+  font-family: $Oswald;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.example__button {
+  font-family: $Oswald;
+  line-height: 20px;
+  color: $black;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
