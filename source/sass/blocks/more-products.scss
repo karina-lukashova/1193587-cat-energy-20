@@ -1,13 +1,26 @@
 .more-products__intro {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 20px;
   color: $dark-asphalt;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .more-products__description {
+  font-family: $Arial;
   font-size: 12px;
   line-height: 16px;
+  color: $light-asphalt;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

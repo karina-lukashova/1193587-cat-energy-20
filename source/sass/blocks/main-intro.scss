@@ -1,8 +1,10 @@
 .main-intro {
-  background-color: $green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  @media (max-width: $mobile-width-only) {
+    background-color: $green;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .main-intro__slogan {
@@ -12,4 +14,11 @@
   color: $white;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+  }
 }

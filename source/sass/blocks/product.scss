@@ -1,3 +1,9 @@
+.product {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient($white 0%, $white 80px, $light-grey 80px, $light-grey 100%);
+  }
+}
+
 .product a {
   text-decoration: none;
 }
@@ -5,9 +11,16 @@
 .product__title {
   font-family: $Oswald;
   font-weight: normal;
+  font-size: 16px;
   line-height: 20px;
   color: $asphalt;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 
   &:hover {
     color: rgba($asphalt, 0.6);
@@ -19,8 +32,14 @@
 }
 
 .product__characteristics {
+  font-family: $Arial;
   font-size: 12px;
   line-height: 16px;
+  color: $light-asphalt;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .product__value {

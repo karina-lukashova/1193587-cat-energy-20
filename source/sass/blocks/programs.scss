@@ -13,14 +13,25 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .programs__to-program {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &:active {
     color: rgba($black, 0.3);

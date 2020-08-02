@@ -9,12 +9,24 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__definition {
+  font-family: $Arial;
   font-size: 12px;
   line-height: 12px;
+  color: $light-asphalt;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__food-cost {
@@ -24,14 +36,28 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: right;
+  }
 }
 
 .example__button {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 20px;
   color: $black;
   text-transform: uppercase;
   text-align: center;
   background-color: transparent;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

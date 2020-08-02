@@ -11,8 +11,15 @@
 
 .form__input-label {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 18px;
+  color: $light-asphalt;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &--radio {
     color: $asphalt;
@@ -25,14 +32,26 @@
 
 .form__input-text::placeholder {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $light-asphalt;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input-comment {
   font-family: $Oswald;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: $light-asphalt;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
