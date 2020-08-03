@@ -1,12 +1,51 @@
+.programs__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+  }
+}
+
 .programs__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .programs__item {
   background-color: $light-grey;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 570px;
+  }
+}
+
+.programs__item:last-of-type {
+  @media (max-width: $desktop-width - 1) {
+    margin-bottom: 0;
+  }
 }
 
 .programs__title {
+  margin: 0;
   font-family: $Oswald;
   font-weight: normal;
   font-size: 24px;
