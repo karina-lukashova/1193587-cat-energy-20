@@ -21,11 +21,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: -80px;
   }
 }
 
@@ -40,5 +35,17 @@
     flex-basis: 245px;
     margin-right: 80px;
     margin-bottom: 63px;
+  }
+}
+
+.catalog__item:nth-of-type(2n) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-right: 0;
+  }
+}
+
+.catalog__item:nth-of-type(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }

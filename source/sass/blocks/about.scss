@@ -21,11 +21,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -133px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: -73px;
   }
 }
 
@@ -38,5 +33,17 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 73px;
+  }
+}
+
+.about__item:nth-of-type(2n) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-right: 0;
+  }
+}
+
+.about__item:nth-of-type(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
