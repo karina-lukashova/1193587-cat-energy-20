@@ -1,11 +1,8 @@
 body {
   min-height: 100%;
-  font-family: $Arial;
-  font-size: 16px;
-  color: $light-asphalt;
-  line-height: 24px;
   margin: 0;
 }
+// Убрала стили шрифта, т.к. он везде разный - удобнее прописывать свой для каждого блока, чтобы не забыть где какой.
 
 img {
   max-width: 100%;

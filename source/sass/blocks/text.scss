@@ -1,5 +1,18 @@
 .text {
+  font-family: $Arial;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  color: $light-asphalt;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.text--programs {
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }

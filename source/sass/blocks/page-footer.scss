@@ -1,3 +1,20 @@
+.page-footer__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+  }
+}
+
 .page-footer {
   background-color: $light-grey;
 }
