@@ -1,5 +1,7 @@
 .form__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .form__fieldset-name {
@@ -7,6 +9,49 @@
   font-size: 24px;
   line-height: 26px;
   color: $black;
+}
+
+.form__main-data {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__main-data-item {
+  @media (min-width: $desktop-width) {
+    flex-basis: 570px;
+    margin-right: 80px;
+  }
+}
+
+.form__main-data-item:nth-of-type(2n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.form__cat-data-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__contact-item {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 570px;
+  margin-right: 78px;
+}
+
+.form__contact-item:nth-of-type(2n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
 }
 
 .form__input-label {
@@ -53,5 +98,54 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.form__add-info {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__add-item {
+  @media (min-width: $tablet-width) {
+    flex-basis: 221px;
+    margin-right: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 104px;
+  }
+}
+
+.form__add-item:nth-of-type(2n) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-right: 0;
+  }
+}
+
+.form__add-item:nth-of-type(4n) {
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.form__footer-info {
+  font-family: $Arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+.form__footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }

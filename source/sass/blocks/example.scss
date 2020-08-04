@@ -1,5 +1,59 @@
+.example__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example {
   background-color: $light-whitesmoke;
+}
+
+.example__text {
+  @media (min-width: $desktop-width) {
+    flex-basis: 440px;
+  }
+}
+
+.example__image {
+  @media (min-width: $desktop-width) {
+    flex-basis: 690px;
+  }
+}
+
+.example__statistics {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__result {
+  display: flex;
+}
+
+.example__result-item {
+  flex-basis: 124px;
+  margin-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 162px;
+    margin-right: 42px;
+  }
+}
+
+.example__result-item:nth-of-type(2n) {
+  margin-right: 0;
 }
 
 .example__number {
@@ -43,6 +97,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     text-align: right;
+    flex-basis: 180px;
   }
 }
 

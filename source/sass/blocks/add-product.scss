@@ -1,4 +1,29 @@
+.add-product {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.add-product__card {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 610px;
+  }
+}
+
 .add-product__title {
+  margin: 0;
   font-family: $Oswald;
   font-weight: normal;
   font-size: 16px;
