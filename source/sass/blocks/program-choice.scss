@@ -1,3 +1,18 @@
+.program-choice__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+    max-width: $desktop-width;
+  }
+}
+
 .program-choice__description {
   font-family: $Oswald;
   font-size: 14px;
@@ -8,17 +23,5 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-.program-choice__add-info {
-  font-family: $Arial;
-  font-size: 14px;
-  line-height: 16px;
-  color: $black;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
   }
 }

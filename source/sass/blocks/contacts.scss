@@ -1,1 +1,14 @@
-// Здесь будут стили для contacts
+.contacts__partnership {
+  margin: 0 auto;
+  padding: 20px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 60px;
+    max-width: $desktop-width;
+  }
+}
