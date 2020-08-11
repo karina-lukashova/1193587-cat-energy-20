@@ -19,6 +19,10 @@
   background-color: $light-whitesmoke;
 }
 
+.example__title {
+  margin: 0;
+}
+
 .example__text {
   @media (min-width: $desktop-width) {
     flex-basis: 440px;

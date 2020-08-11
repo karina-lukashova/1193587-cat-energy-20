@@ -9,6 +9,9 @@
 }
 
 .product__title {
+  margin: 0;
+  margin-bottom: 15px;
+  width: 76px;
   font-family: $Oswald;
   font-weight: normal;
   font-size: 16px;
@@ -20,6 +23,9 @@
     font-size: 20px;
     line-height: 24px;
     text-align: center;
+    margin: auto;
+    margin-bottom: 12px;
+    width: 150px;
   }
 
   &:hover {
@@ -32,16 +38,127 @@
 }
 
 .product__characteristics {
+  width: 100%;
   font-family: $Arial;
   font-size: 12px;
   line-height: 16px;
   color: $light-asphalt;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
 }
 
+.product__characteristic {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $dark-silver;
+  }
+}
+
+.product__characteristic td {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+  }
+}
+
 .product__value {
   text-align: right;
+}
+
+.product__info {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+  }
+}
+
+.product__image {
+  display: flex;
+  flex-basis: 140px;
+
+  @media (min-width: $tablet-width) {
+    flex-basis: 200px;
+    flex-direction: column-reverse;
+    margin-bottom: 42px;
+  }
+}
+
+.product__image img {
+  margin: auto;
+  width: 84px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    width: 168px;
+    height: 200px;
+  }
+}
+
+.product__image--500-chicken img {
+  width: 68px;
+  height: 86px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.product__image--big img {
+  width: 84px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+}
+
+.product__image--500-fish img {
+  width: 68px;
+  height: 78px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
+}
+
+.product__image--500-buckwheat img {
+  width: 68px;
+  height: 78px;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 171px;
+  }
+}
+
+.product__image--500-rice img {
+  width: 72px;
+  height: 84px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
+}
+
+.product__text {
+  flex-basis: 140px;
+}
+
+.product__order {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
 }
