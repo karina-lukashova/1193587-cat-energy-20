@@ -13,9 +13,7 @@
 
 .main-title--index {
   @media (max-width: $mobile-width-only) {
-    .main-title--index {
-      color: $white;
-      text-align: center;
-    }
+    color: $white;
+    text-align: center;
   }
 }

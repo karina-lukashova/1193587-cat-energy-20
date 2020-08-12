@@ -1,16 +1,31 @@
 .page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0 20px;
+  padding-top: 7px;
+  padding-bottom: 13px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
     padding: 0 30px;
+    padding-top: 26px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
     max-width: $desktop-width;
+    padding-top: 55px;
+    padding-bottom: 23px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.page-header__logo {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    padding-top: 5px;
   }
 }

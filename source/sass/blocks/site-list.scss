@@ -11,6 +11,9 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 440px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,14 +23,70 @@
 }
 
 .site-list__item {
-  &--active {
-    border-bottom: 2px solid $green;
+  @media (min-width: $tablet-width) {
+    margin-right: 36px;
+  }
+}
+
+.site-list__item:last-of-type {
+  margin-right: 0;
+}
+
+.site-list__item--active {
+  position: relative;
+}
+
+.site-list__item--active-desktop {
+  position: relative;
+}
+
+.site-list__item--active::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: $green;
+  }
+}
+
+.site-list__item--active-desktop::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: $white;
   }
 }
 
 .site-list__item a {
   color: $black;
   text-decoration: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    padding: 22px;
+    border-top: 1px solid $dark-whitesmoke;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $dark-asphalt;
+  }
+}
+
+.site-list__item--desktop-index a {
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .site-list__item a[href] {

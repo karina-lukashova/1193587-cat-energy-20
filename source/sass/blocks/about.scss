@@ -1,10 +1,18 @@
+.about {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    border-bottom: 1px solid $dark-whitesmoke;
+  }
+}
+
 .about__wrapper {
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 46px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,14 +33,30 @@
 }
 
 .about__item {
+  padding-left: 80px;
+  margin-bottom: 27px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     flex-basis: 250px;
     min-height: 280px;
     margin-right: 133px;
+    margin-bottom: 37px;
+    padding-top: 152px;
+    padding-left: 0;
+    padding-bottom: 57px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 73px;
+    margin-right: 80px;
+    flex-basis: 245px;
+  }
+}
+
+.about__item:last-of-type {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
   }
 }
 
@@ -45,5 +69,168 @@
 .about__item:nth-of-type(4n) {
   @media (min-width: $desktop-width) {
     margin-right: 0;
+  }
+}
+
+.about__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+  }
+}
+
+.about__item--useful::after {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 11px;
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 67px;
+    left: 27px;
+  }
+}
+
+.about__item--powder::after {
+  content: "";
+  width: 29px;
+  height: 31px;
+  background-image: url("../img/advantage-powder@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 64px;
+    left: 26px;
+  }
+}
+
+.about__item--eating::after {
+  content: "";
+  width: 23px;
+  height: 30px;
+  background-image: url("../img/advantage-dining@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 12px;
+  left: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 65px;
+    left: 29px;
+  }
+}
+
+.about__item--result::after {
+  content: "";
+  width: 32px;
+  height: 33px;
+  background-image: url("../img/advantage-clock@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 65px;
+    left: 25px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.about__description {
+  margin: 0;
+  position: relative;
+}
+
+.about__description--first::before {
+  @media (min-width: $tablet-width) {
+    content: "1";
+    font-family: $Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: $light-grey;
+    position: absolute;
+    right: 20px;
+    top: -150px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 16px;
+  }
+}
+
+.about__description--second::before {
+  @media (min-width: $tablet-width) {
+    content: "2";
+    font-family: $Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: $light-grey;
+    position: absolute;
+    right: 7px;
+    top: -150px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 2px;
+  }
+}
+
+.about__description--third::before {
+  @media (min-width: $tablet-width) {
+    content: "3";
+    font-family: $Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: $light-grey;
+    position: absolute;
+    right: 0;
+    top: -152px;
+    z-index: -1;
+  }
+}
+
+.about__description--fourth::before {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    font-family: $Oswald;
+    font-size: 280px;
+    line-height: 280px;
+    color: $light-grey;
+    position: absolute;
+    right: 0;
+    top: -152px;
+    z-index: -1;
   }
 }

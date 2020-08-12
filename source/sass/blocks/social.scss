@@ -1,1 +1,15 @@
-// Здесь будут стили для social
+.social__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  width: 130px;
+  padding: 20px 77px;
+  border-bottom: 1px solid $silver;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
