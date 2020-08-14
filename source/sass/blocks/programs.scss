@@ -2,17 +2,19 @@
   margin: 0 auto;
   padding: 22px 20px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     padding-bottom: 45px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
     padding-top: 80px;
     padding-bottom: 40px;
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
 

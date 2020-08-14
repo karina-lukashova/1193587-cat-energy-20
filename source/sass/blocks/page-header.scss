@@ -4,6 +4,7 @@
   padding-top: 7px;
   padding-bottom: 13px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -11,11 +12,12 @@
     padding: 0 30px;
     padding-top: 26px;
     padding-bottom: 22px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    max-width: $desktop-width;
+    width: $desktop-width;
     padding-top: 55px;
     padding-bottom: 23px;
     position: relative;
