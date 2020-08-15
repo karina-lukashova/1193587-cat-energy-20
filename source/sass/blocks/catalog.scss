@@ -27,13 +27,13 @@
     margin: 0;
     padding: 0;
     padding-top: 37px;
-    padding-bottom: 83px;
+    padding-bottom: 85px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 47px;
-    padding-bottom: 86px;
+    padding-bottom: 70px;
   }
 }
 
@@ -51,17 +51,16 @@
 .catalog__item {
   margin: 0 -20px;
   padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid $superlight-whitesmoke;
 
   @media (min-width: $tablet-width) {
     flex-basis: 324px;
     margin: 0;
     margin-right: 60px;
-    margin-bottom: 60px;
-    padding: 0 37px;
-    padding-bottom: 39px;
+    margin-bottom: 61px;
+    padding: 0;
+    padding-bottom: 40px;
     box-sizing: border-box;
     border: none;
   }
@@ -69,7 +68,11 @@
   @media (min-width: $desktop-width) {
     flex-basis: 245px;
     margin-right: 80px;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 42px;
   }
 }
 
@@ -86,7 +89,17 @@
 }
 
 .catalog__item--more {
+  @media (max-width: $mobile-width-only) {
+    @-moz-document url-prefix("") {
+      padding-bottom: 26px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 95px;
   }
 }
