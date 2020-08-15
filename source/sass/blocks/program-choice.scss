@@ -1,19 +1,27 @@
 .program-choice__wrapper {
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 32px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    margin-bottom: 72px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    max-width: $desktop-width;
+    width: $desktop-width;
+    margin-bottom: 82px;
   }
 }
 
 .program-choice__description {
+  margin: 0;
+  margin-right: 54px;
+  margin-bottom: 39px;
   font-family: $Oswald;
   font-size: 14px;
   line-height: 18px;
@@ -23,5 +31,38 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 323px;
+    padding-left: 40px;
+    margin: 0;
+    margin-bottom: 66px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 19px;
+  }
+}
+
+.program-choice__title {
+  margin: 0 -20px;
+  padding: 0 20px;
+  padding-top: 27px;
+  padding-bottom: 38px;
+  border-top: 1px solid $silver;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 37px 0;
+    padding-bottom: 55px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 46px;
+    padding-bottom: 38px;
+  }
+}
+
+.program-choice__form {
+  box-sizing: border-box;
 }

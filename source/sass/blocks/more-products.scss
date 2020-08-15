@@ -23,6 +23,10 @@
     top: 82px;
     width: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 78px;
+  }
 }
 
 .more-products::after {
@@ -38,6 +42,10 @@
   @media (min-width: $tablet-width) {
     top: 52px;
     height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 48px;
   }
 }
 

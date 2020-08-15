@@ -9,15 +9,17 @@
   padding: 0 20px;
   padding-bottom: 46px;
   box-sizing: border-box;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     padding-bottom: 9px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
 
@@ -51,6 +53,7 @@
   @media (min-width: $desktop-width) {
     margin-right: 80px;
     flex-basis: 245px;
+    margin-bottom: 12px;
   }
 }
 

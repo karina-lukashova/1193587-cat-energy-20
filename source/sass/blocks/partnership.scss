@@ -1,38 +1,38 @@
 .partnership {
-  background-color: $light-grey;
   display: flex;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     background-color: $white;
-    width: 570px;
-  }
-
-  &--main {
-    background-color: $white;
   }
 }
 
 .partnership__title {
+  margin: 0;
   font-family: $Oswald;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $dark-asphalt;
   text-transform: uppercase;
   flex-basis: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
     flex-basis: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 3px;
   }
 }
 
 .partnership__address {
+  margin: 0;
   font-family: $Arial;
   font-size: 14px;
   line-height: 20px;
@@ -46,5 +46,11 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     text-align: right;
+  }
+}
+
+.partnership__address br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

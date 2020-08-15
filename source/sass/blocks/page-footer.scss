@@ -4,6 +4,7 @@
   box-sizing: border-box;
   display: grid;
   grid-template-rows: min-content min-content min-content;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -11,11 +12,12 @@
     padding-bottom: 61px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 57px 40px;
-    max-width: $desktop-width;
+    width: $desktop-width;
   }
 }
 
