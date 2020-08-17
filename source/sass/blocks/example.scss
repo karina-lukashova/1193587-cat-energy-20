@@ -34,7 +34,7 @@
   background-color: $light-whitesmoke;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient($white 0%, $white 691px, $light-whitesmoke 691px, $light-whitesmoke 100%);
+    background-image: linear-gradient($white 0%, $white 619px, $light-whitesmoke 619px, $light-whitesmoke 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -98,13 +98,16 @@
 
 .example__photos {
   position: relative;
-  width: 100%;
-  min-height: 240px;
+  width: 320px;
+  height: 240px;
+  margin: 0 -20px;
   margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
-    min-height: 517px;
-    margin-bottom: 27px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 690px;
+    height: 517px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,21 +118,26 @@
 .example__photo {
   display: block;
   position: absolute;
-}
-
-.example__photo--before {
-  width: 311px;
-  height: 232px;
+  width: 320px;
+  height: 240px;
 
   @media (min-width: $tablet-width) {
-    left: 50%;
-    transform: translateX(-50%);
     width: 690px;
     height: 517px;
   }
+}
+
+.example__photo--before {
+  top: -8px;
+
+  @media (min-width: $tablet-width) {
+    left: 51%;
+    top: 0;
+    transform: translateX(-50%);
+  }
 
   @media (min-width: $desktop-width) {
-    left: 55%;
+    left: 56%;
   }
 }
 
@@ -140,38 +148,35 @@
 .example__photo--before-clip {
   @media (min-width: $tablet-width) {
     display: block;
-    clip: rect(auto, 345px, auto, auto);
+    clip: rect(auto, 338px, auto, auto);
   }
 
   @media (min-width: $desktop-width) {
-    clip: rect(auto, 370px, auto, auto);
+    clip: rect(auto, 365px, auto, auto);
   }
 }
 
 .example__photo--after-clip {
   @media (min-width: $tablet-width) {
     display: block;
-    clip: rect(auto, auto, auto, 345px);
+    clip: rect(auto, auto, auto, 338px);
   }
 
   @media (min-width: $desktop-width) {
-    clip: rect(auto, auto, auto, 370px);
+    clip: rect(auto, auto, auto, 365px);
   }
 }
 
 .example__photo--after {
-  width: 251px;
-  height: 240px;
   left: 50%;
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
-    width: 690px;
-    height: 517px;
+    left: 51%;
   }
 
   @media (min-width: $desktop-width) {
-    left: 55%;
+    left: 56%;
   }
 }
 
@@ -180,7 +185,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom: 84px;
   }
 }
 
