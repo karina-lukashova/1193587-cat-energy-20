@@ -389,7 +389,7 @@
 }
 
 .form__input-text:required:invalid {
-  border: 2px solid $red;
+  outline: 2px solid $red; //вместо border сделала outline, т.к. c border элементы немного прыгают (когда border убирается)
 }
 
 .form__input-text:hover {
@@ -731,19 +731,10 @@
 
 .form__icon {
   position: absolute;
-  width: 20px;
   right: 14px;
   top: 50%;
   transform: translateY(-50%);
   fill: $asphalt;
-}
-
-.form__icon--mail {
-  height: 14px;
-}
-
-.form__icon--tel {
-  height: 20px;
 }
 
 .form__input-text--contacts:invalid + .form__icon {
