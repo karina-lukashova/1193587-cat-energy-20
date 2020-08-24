@@ -7,6 +7,9 @@ const autoprefixer = require("autoprefixer");
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -43,14 +46,34 @@ const images = () => {
 
 exports.images = images;
 
+// HTML minimize
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+// JS minimize
+
+const jsmin = () => {
+  return pipeline(
+    gulp.src("source/js/*.js"),
+    uglify(),
+    gulp.dest("build/js")
+  );
+}
+
+exports.jsmin = jsmin;
+
 // Copy files to build folder
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**",
-    "source/js/**",
-    "source/*.html"
+    "source/img/**"
   ], {
     base: "source"
   })
@@ -71,7 +94,9 @@ exports.clean = clean;
 
 const build = gulp.series(
   clean,
+  html,
   copy,
+  jsmin,
   images,
   styles
 )
