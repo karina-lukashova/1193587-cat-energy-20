@@ -226,7 +226,7 @@
   position: relative;
 
   @-moz-document url-prefix("") {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -254,17 +254,22 @@
 .form__cat-data-item {
   box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
+
+  @-moz-document url-prefix("") {
+    margin-bottom: 15px;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 }
 
@@ -290,17 +295,18 @@
 
 .form__contact-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
   position: relative;
 
   @-moz-document url-prefix("") {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -337,7 +343,7 @@
 }
 
 .form__input-label--age {
-  margin-right: 16px;
+  margin-right: 13px;
 }
 
 .form__input-label--email {
@@ -419,8 +425,6 @@
 }
 
 .form__input-text--age {
-  width: 172px;
-
   @media (min-width: $desktop-width) {
     padding-top: 10px;
     padding-left: 18px;
