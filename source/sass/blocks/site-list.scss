@@ -13,18 +13,20 @@
     line-height: 24px;
     display: flex;
     flex-wrap: wrap;
-    min-width: 440px;
+    width: 441px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    width: 482px;
   }
 }
 
 .site-list__item {
   @media (min-width: $tablet-width) {
     margin-right: 36px;
+    margin-bottom: 10px;
   }
 }
 
@@ -96,5 +98,15 @@
 
   &:active {
     color: rgba($black, 0.3);
+  }
+}
+
+.site-list__item--desktop-index a[href] {
+  &:hover {
+    color: rgba($white, 0.6);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
   }
 }

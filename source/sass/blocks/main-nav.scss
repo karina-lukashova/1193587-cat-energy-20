@@ -1,8 +1,15 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
-  margin-top: 16px;
-  margin-bottom: -16px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 11px;
+    margin-bottom: -10px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
 }
 
 .main-nav__toggle {
@@ -62,5 +69,9 @@
 
   .main-nav--nojs .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
   }
 }

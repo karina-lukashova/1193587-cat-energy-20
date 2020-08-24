@@ -5,13 +5,20 @@
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 130px;
+  width: 125px;
   padding: 20px 77px;
+  padding-left: 70px;
   border-bottom: 1px solid $silver;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     border-bottom: none;
+    margin-left: 50px;
+    width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 135px;
   }
 }
 

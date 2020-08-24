@@ -49,7 +49,7 @@
   }
 }
 
-.partnership__address br {
+.partnership__address br:first-of-type {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
