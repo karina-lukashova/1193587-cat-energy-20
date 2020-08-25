@@ -11,6 +11,14 @@
   }
 }
 
+.contacts__partnership-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+
 .contacts__partnership {
   margin: 0 auto;
   padding: 0 20px;
