@@ -102,11 +102,13 @@
 }
 
 .site-list__item--desktop-index a[href] {
-  &:hover {
-    color: rgba($white, 0.6);
-  }
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: rgba($white, 0.6);
+    }
 
-  &:active {
-    color: rgba($white, 0.3);
+    &:active {
+      color: rgba($white, 0.3);
+    }
   }
 }

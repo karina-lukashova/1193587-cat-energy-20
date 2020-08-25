@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    padding-top: 55px;
+    padding-top: 53px;
     padding-bottom: 61px;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
@@ -16,7 +16,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 40px;
+    padding: 57px 110px;
+    padding-top: 55px;
     width: $desktop-width;
   }
 }
@@ -42,6 +43,6 @@
 
   @media (min-width: $tablet-width) {
     justify-self: end;
-    align-self: start;
+    align-self: center;
   }
 }

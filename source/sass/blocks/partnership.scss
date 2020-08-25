@@ -49,8 +49,9 @@
   }
 }
 
-.partnership__address br:first-of-type {
-  @media (max-width: $mobile-width-only) {
-    display: none;
+.partnership__city {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 20px;
   }
 }
