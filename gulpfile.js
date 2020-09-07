@@ -12,6 +12,7 @@ const uglify = require("gulp-uglify");
 const pipeline = require("readable-stream").pipeline;
 const del = require("del");
 const sync = require("browser-sync").create();
+const ghpages = require("gh-pages");
 
 // Styles
 
