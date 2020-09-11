@@ -17,37 +17,74 @@
   top: 42px;
   right: 0%;
 
+  @-moz-document url-prefix("") {
+    top: -68px;
+    z-index: -1;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     top: 100px;
+
+    @-moz-document url-prefix("") {
+      top: -92px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     top: 21px;
+
+    @-moz-document url-prefix("") {
+      top: -92px;
+    }
   }
 }
 
 .form__fieldset--comment::before {
   top: 28px;
 
+  @-moz-document url-prefix("") {
+    top: -47px;
+  }
+
   @media (min-width: $tablet-width) {
     top: 70px;
+
+    @-moz-document url-prefix("") {
+      top: -90px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     top: 21px;
+
+    @-moz-document url-prefix("") {
+      top: -90px;
+    }
   }
 }
 
 .form__fieldset--add::before {
   top: 26px;
 
+  @-moz-document url-prefix("") {
+    top: -50px;
+  }
+
   @media (min-width: $tablet-width) {
     top: 69px;
+
+    @-moz-document url-prefix("") {
+      top: -77px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     top: 22px;
+
+    @-moz-document url-prefix("") {
+      top: -77px;
+    }
   }
 }
 
